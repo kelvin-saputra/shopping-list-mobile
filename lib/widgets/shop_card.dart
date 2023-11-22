@@ -41,7 +41,7 @@ class ShopCard extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const ProductPage()));
           }else if (item.name == "Logout") {
             final response = await request.logout(
-                "http://localhost:8000/auth/logout/");
+                "http://kelvin-saputra-tutorial.pbp.cs.ui.ac.id/auth/logout/");
             String message = response["message"];
             if (response['status']) {
               String uname = response["username"];
